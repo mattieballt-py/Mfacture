@@ -38,6 +38,7 @@ header {
 .logo {
     width: 5vw;
     height: auto;
+    margin: 2px;
 }
 
 .logo-text {
@@ -71,36 +72,6 @@ header {
 .deliver-to span {
     display: flex;
     flex-direction: column;
-}
-
-.search-container {
-    flex: 1;
-    display: flex;
-    height: 40px;
-    margin: 0 10px;
-    max-width: 800px;
-}
-
-#search-category {
-    background-color: #f3f3f3;
-    border: none;
-    border-radius: 4px 0 0 4px;
-    padding: 0 5px;
-}
-
-#search-input {
-    flex: 1;
-    border: none;
-    padding: 0 10px;
-    outline: none;
-}
-
-#search-button {
-    background-color: #febd69;
-    border: none;
-    width: 45px;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
 }
 
 .account-nav {
@@ -167,6 +138,39 @@ header {
     padding: 50px 20px;
     text-align: center;
     margin-bottom: 20px;
+}
+.searchbtn {
+    width: 10px;
+}
+
+.search-container {
+    flex: 1;
+    display: flex;
+    height: 40px;
+    margin: 0 10px;
+    max-width: 800px;
+}
+
+#search-category {
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    padding: 0 5px;
+}
+
+#search-input {
+    flex: 1;
+    border: none;
+    padding: 0 10px;
+    outline: none;
+}
+
+#search-button {
+    background-color: #febd69;
+    border: none;
+    width: 45px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
 }
 
 .hero-content {
@@ -347,6 +351,7 @@ footer {
     text-align: center;
     font-size: 0.8rem;
 }
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
