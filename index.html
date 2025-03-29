@@ -64,9 +64,10 @@
             <div class="search-container">
                 <select id="search-category">
                     <option value="all">All</option>
-                    <option value="electronics">3D Printing</option>
-                    <option value="books">CNC</option>
-                    <option value="clothing">Laser Cutting</option>
+                    <option value="3dprinting">3D Printing</option>
+                    <option value="cnc">CNC</option>
+                    <option value="lasercut">Laser Cutting</option>
+                    <option value="pcbfab">PCB Fabrication</option>
                 </select>
                 <input type="text" id="search-input" placeholder="Search Manufacturing Service">
                 <button type="submit" id="search-button"><i class="fas fa-search"><img class="searchbtn" src="AssetsImgs/srch.png"></i></button>
@@ -79,43 +80,44 @@
             <h2>Shop by Service</h2>
             <div class="category-grid">
                 <div class="category-card">
-                    <img src="/api/placeholder/150/150" alt="Electronics">
+                    <img src="AssetsImgs/3dprntstock.jpg" alt="3D Printing" class="auto-crop">
                     <h3>3D Printing</h3>
                 </div>
                 <div class="category-card">
-                    <img src="/api/placeholder/150/150" alt="Books">
+                    <img src="AssetsImgs/cncstock.webp" alt="CNC" class="auto-crop">
                     <h3>CNC</h3>
                 </div>
                 <div class="category-card">
-                    <img src="/api/placeholder/150/150" alt="Home & Kitchen">
-                    <h3>Laser Cuttingn</h3>
+                    <img src="AssetsImgs/lasercutting.webp" alt="Laser Cutting" class="auto-crop">
+                    <h3>Laser Cutting</h3>
                 </div>
                 <div class="category-card">
-                    <img src="/api/placeholder/150/150" alt="Fashion">
-                    <h3>Fashion</h3>
+                    <img src="AssetsImgs/circuitboarding.webp" alt="PCB Fabrication" class="auto-crop">
+                    <h3>PCB Fabrication</h3>
                 </div>
             </div>
         </section>
         
-        <section id="featured-products" class="product-grid">
+        <section id="featured-manufacturers" class="product-grid">
             <h2>Featured Manufacturers</h2>
             <div class="carousel-container">
                 <button class="prev-btn">&#10094;</button>
                 <div class="carousel">
                     <div class="manufacturer">
-                        <img src="AssetsImgs/hacklab.png" alt="Hacklab Edinburgh">
+                        <img src="AssetsImgs/hacklab.png" alt="Hacklab Edinburgh" href="https://edinburghhacklab.com/">
+                        <h2>Hacklab</h2>
                         <div class="services">
-                            <span class="service"><img src="3d-printing-icon.png" alt="3D Printing">3D Printing</span>
-                            <span class="service"><img src="cnc-icon.png" alt="CNC">CNC</span>
+                            <span class="service"><a>3D Printing</a></span>
+                            <span class="service"><a>CNC</a></span>
                         </div>
                         <div class="rating">⭐⭐⭐⭐☆</div>
                     </div>
             
                     <div class="manufacturer">
-                        <img src="manufacturer2-logo.png" alt="Manufacturer 2">
+                        <img src="AssetsImgs/northllaser.jpg" alt="North London Laser Service" href="https://www.northlondonlaser.com/">
+                        <h2>North London Laser</h2>
                         <div class="services">
-                            <span class="service"><img src="laser-cutting-icon.png" alt="Laser Cutting">Laser Cutting</span>
-                            <span class="service"><img src="molding-icon.png" alt="Molding">Molding</span>
+                            <span class="service"><a href="#">Laser Cutting</a></span>
                         </div>
                         <div class="rating">⭐⭐⭐⭐⭐</div>
                     </div>
@@ -123,7 +125,7 @@
                     <div class="manufacturer">
                         <img src="manufacturer3-logo.png" alt="Manufacturer 3">
                         <div class="services">
-                            <span class="service"><img src="sheet-metal-icon.png" alt="Sheet Metal">Sheet Metal</span>
+                            <span class="service"><a>Sheet Metal</a></span>
                         </div>
                         <div class="rating">⭐⭐⭐⭐☆</div>
                     </div>
@@ -177,7 +179,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025, MFacture.com, Inc. or its affiliates made by Mattie, Solas and Samir </p>
+            <p>&copy; 2025, MFacture.com, Inc. or its affiliates made by Mattie, Solan and Samir </p>
         </div>
     </footer>
     

@@ -243,6 +243,14 @@ main {
     max-width: 100%;
     margin-bottom: 10px;
 }
+.auto-crop {
+    width: 200px;  /* Set desired width */
+    height: 200px; /* Set desired height */
+    object-fit: cover;
+    object-position: center; /* Center the crop */
+    border-radius: 10px; /* Optional: Add rounded corners */
+  }
+  
 
 /* Product Grid */
 .products-container {
@@ -321,8 +329,12 @@ main {
     transition: transform 0.5s ease-in-out;
 }
 
-/* Manufacturer Card */
+/* Ensure manufacturer cards have equal height */
 .manufacturer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Ensures proper spacing */
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -330,42 +342,40 @@ main {
     padding: 20px;
     min-width: 250px;
     margin: 10px;
+    min-height: 280px; /* Adjust to fit content properly */
 }
 
-.manufacturer img {
-    max-width: 100px;
-    height: auto;
-}
-
-/* Services Icons */
-.services {
+/* Make sure all headings take the same space */
+.manufacturer h2 {
+    min-height: 40px; /* Adjust based on longest title */
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.manufacturer img {
+    width: 100px;
 }
 
+/* Individual Service Tags */
 .service {
     display: flex;
     align-items: center;
-    font-size: 12px;
-    background: #f5f5f5;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #e0e0e0; /* Slightly darker grey for contrast */
+    padding: 4px;
+    border-radius: 4px; /* Rounded corners for pill shape */
+    margin: 10px;
 }
 
-.service img {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-}
 
-/* Star Rating */
+/* Keep ratings at the bottom */
 .rating {
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: auto; /* Pushes to the bottom */
 }
+
 
 /* Navigation Buttons */
 .prev-btn, .next-btn {
@@ -393,7 +403,7 @@ footer {
 }
 
 .back-to-top {
-    background-color: #528ddb;
+    background-color: #FFA200 ;
     padding: 15px;
     text-align: center;
 }
