@@ -1,0 +1,25 @@
+document.getElementById("search-button").addEventListener("click", async () => {
+    const query = document.getElementById("search-input").value;
+    if (!query) return alert("Please enter a search term!");
+
+    const response = await fetch(`http://localhost:3000/search?query=${encodeURIComponent(query)}`);
+    const results = await response.json();
+
+    displayResults(results);
+});
+
+function displayResults(results) {
+    const resultsGrid = document.getElementById("results-grid");
+    resultsGrid.innerHTML = "";
+
+    results.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "result-card";
+        card.innerHTML = `
+            <h3>${item.title}</h3>
+            <p>${item.snippet}</p>
+            <a href="${item.link}" target="_blank">Visit Site</a>
+        `;
+        resultsGrid.appendChild(card);
+    });
+}
