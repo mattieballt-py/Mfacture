@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@
 
 body {
     background-color: #f3f3f3;
-    color: #333;
+    color: #000000;
 }
 
 a {
@@ -22,7 +22,7 @@ ul {
 
 /* Header Styles */
 header {
-    background-color: #131921;
+    background-color: #000000;
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -30,19 +30,26 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .logo-container {
-    margin-right: 10px;
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Centers items vertically */
 }
 
 .logo {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 5px;
     width: 5vw;
     height: auto;
 }
+
+.logo-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    margin-left: 5px;
+    display: flex;
+    align-items: center; /* Centers the text vertically */
+    height: 100%;
+}
+
 
 .address-container {
     color: white;
@@ -135,7 +142,7 @@ header {
 
 /* Sub Navigation Styles */
 .sub-nav {
-    background-color: #232f3e;
+    background-color: #51555b;
     color: white;
     padding: 8px 20px;
 }
@@ -155,7 +162,7 @@ header {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(to right, #232f3e, #37475a);
+    background: linear-gradient(to right, #a9b3bd, #b0b0b0);
     color: white;
     padding: 50px 20px;
     text-align: center;
